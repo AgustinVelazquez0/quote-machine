@@ -1,0 +1,100 @@
+/* General body styles */
+body {
+  background: #121835; /* Fondo gris claro */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: #333; /* Color de texto oscuro para buena legibilidad */
+}
+
+#quote-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff; /* Fondo blanco para el contenedor de la cita */
+  border-radius: 15px;
+  padding: 30px;
+  width: 80%;
+  max-width: 600px; /* Ancho máximo para no estirarse demasiado en pantallas grandes */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  text-align: center;
+}
+
+#text {
+  font-size: 1.6rem;
+  font-weight: bold;
+  font-style: italic;
+  color: #333;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-left: 5px solid #4caf50; /* Barra verde a la izquierda para darle énfasis */
+  background: #f9f9f9;
+  border-radius: 5px;
+}
+
+#author {
+  font-size: 1.8rem;
+  color: #000000;
+  margin-bottom: 20px;
+  padding: 10px 20px; /* Añade espacio alrededor del texto */
+  background-color: #f4f4f4;
+  border: 2px solid #030952;
+  border-radius: 5px;
+  display: inline-block; /* Para que el recuadro se ajuste al tamaño del texto */
+}
+
+button {
+  font-size: 1.2rem;
+  padding: 12px 30px;
+  background-color: #0c055c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transición para un cambio de color suave */
+  margin-bottom: 15px; /* Espaciado entre el botón y el enlace */
+}
+
+button:hover {
+  background-color: #06049b6c;
+}
+
+#tweet-quote {
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: #1da1f2; /* Color azul de Twitter */
+  font-weight: bold;
+}
+
+#tweet-quote:hover {
+  text-decoration: underline; /* Subrayado al pasar el ratón */
+}
+
+/* Responsive Design: Aseguramos que el diseño se vea bien en dispositivos móviles */
+@media (max-width: 600px) {
+  #quote-box {
+    width: 90%;
+    padding: 20px;
+  }
+
+  #text {
+    font-size: 1.3rem;
+  }
+
+  #author {
+    font-size: 1.1rem;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 10px 25px;
+  }
+
+  #tweet-quote {
+    font-size: 1rem;
+  }
+}
